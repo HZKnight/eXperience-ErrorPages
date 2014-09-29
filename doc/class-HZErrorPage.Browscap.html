@@ -1,0 +1,1705 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class HZErrorPage\Browscap | hzerrorpages</title>
+
+	<script type="text/javascript" src="resources/combined.js?2172775131"></script>
+	<script type="text/javascript" src="elementlist.js?2693762090"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-HZErrorPage.html">HZErrorPage</a>
+						</li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-HZErrorPage.Browscap.html">Browscap</a></li>
+			</ul>
+
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-HZErrorPage.Exception.html">Exception</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-HZErrorPage.html" title="Summary of HZErrorPage"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Browscap</h1>
+
+
+	<div class="description">
+	
+<p>Browscap.ini parsing class with caching and update capabilities</p>
+
+<p>PHP version 5</p>
+
+<p>Copyright (c) 2006-2012 Jonathan Stoppani</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-HZErrorPage.html">HZErrorPage</a><br />
+		<b>Package:</b> Browscap<br />
+
+				<b>Copyright:</b>
+				Copyright (c) 2006-2012 Jonathan Stoppani<br />
+				<b>License:</b>
+				<a href="http://www.opensource.org/licenses/MIT">MIT License</a><br />
+				<b>Author:</b>
+				Jonathan Stoppani &lt;<a
+href="mailto:jonathan&#64;stoppani.name">jonathan&#64;<!---->stoppani.name</a>&gt;<br />
+				<b>Author:</b>
+				Vítor Brandão &lt;<a
+href="mailto:noisebleed&#64;noiselabs.org">noisebleed&#64;<!---->noiselabs.org</a>&gt;<br />
+				<b>Version:</b>
+				1.0<br />
+				<b>Link:</b>
+				<a href="https://github.com/GaretJax/phpbrowscap/">https://github.com/GaretJax/phpbrowscap/</a><br />
+		<b>Located at</b> <a href="source-class-HZErrorPage.Browscap.html#7-823" title="Go to source code">lib/Browscap.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-HZErrorPage.Browscap.html#205-240" title="Go to source code">__construct</a>( <span>string <var>$cache_dir</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Constructor class, checks for the existence of (and loads) the cache and if
+needed updated the definitions</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Constructor class, checks for the existence of (and loads) the cache and if
+needed updated the definitions</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$cache_dir</var></dt>
+					<dd><code>string</code><br>$cache_dir</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getBrowser" id="_getBrowser">
+
+		<td class="attributes"><code>
+			 public 
+			stdObject
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getBrowser">#</a>
+		<code><a href="source-class-HZErrorPage.Browscap.html#242-332" title="Go to source code">getBrowser</a>( <span>string <var>$user_agent</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$return_array</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Gets the information about the browser by User Agent</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets the information about the browser by User Agent</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$user_agent</var></dt>
+					<dd><code>string</code><br>$user_agent the user agent string</dd>
+					<dt><var>$return_array</var></dt>
+					<dd><code>boolean</code><br>$return_array whether return an array or an object</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>stdObject</code><br>the object containing the browsers details. Array if $return_array is set to
+true.<br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-HZErrorPage.Exception.html">HZErrorPage\Exception</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="autodetectProxySettings" id="_autodetectProxySettings">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_autodetectProxySettings">#</a>
+		<code><a href="source-class-HZErrorPage.Browscap.html#334-352" title="Go to source code">autodetectProxySettings</a>( )</code>
+
+		<div class="description short">
+			
+<p>Load (auto-set) proxy settings from environment variables.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Load (auto-set) proxy settings from environment variables.</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addProxySettings" id="_addProxySettings">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-HZErrorPage.Browscap.html">HZErrorPage\Browscap</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addProxySettings">#</a>
+		<code><a href="source-class-HZErrorPage.Browscap.html#354-390" title="Go to source code">addProxySettings</a>( <span>string <var>$server</var></span>, <span>integer <var>$port</var> = <span class="php-num">3128</span></span>, <span>string <var>$wrapper</var> = <span class="php-quote">'http'</span></span>, <span>string <var>$username</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$password</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Add proxy settings to the stream context array.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add proxy settings to the stream context array.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$server</var></dt>
+					<dd><code>string</code><br>$server Proxy server/host</dd>
+					<dt><var>$port</var></dt>
+					<dd><code>integer</code><br>$port Port</dd>
+					<dt><var>$wrapper</var></dt>
+					<dd><code>string</code><br>$wrapper Wrapper: "http", "https", "ftp", others...</dd>
+					<dt><var>$username</var></dt>
+					<dd><code>string</code><br>$username Username (when requiring authentication)</dd>
+					<dt><var>$password</var></dt>
+					<dd><code>string</code><br>$password Password (when requiring authentication)</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-HZErrorPage.Browscap.html">HZErrorPage\Browscap</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="clearProxySettings" id="_clearProxySettings">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_clearProxySettings">#</a>
+		<code><a href="source-class-HZErrorPage.Browscap.html#392-423" title="Go to source code">clearProxySettings</a>( <span>string <var>$wrapper</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Clear proxy settings from the stream context options array.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Clear proxy settings from the stream context options array.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$wrapper</var></dt>
+					<dd><code>string</code><br>$wrapper Remove settings from this wrapper only</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>Wrappers cleared<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getStreamContextOptions" id="_getStreamContextOptions">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getStreamContextOptions">#</a>
+		<code><a href="source-class-HZErrorPage.Browscap.html#425-433" title="Go to source code">getStreamContextOptions</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the array of stream context options.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the array of stream context options.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="updateCache" id="_updateCache">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_updateCache">#</a>
+		<code><a href="source-class-HZErrorPage.Browscap.html#435-516" title="Go to source code">updateCache</a>( )</code>
+
+		<div class="description short">
+			
+<p>Parses the ini file and updates the cache files</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Parses the ini file and updates the cache files</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>whether the file was correctly written to the disk<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_loadCache" id="__loadCache">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__loadCache">#</a>
+		<code><a href="source-class-HZErrorPage.Browscap.html#518-533" title="Go to source code">_loadCache</a>( <span>mixed <var>$cache_file</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Loads the cache into object's properties</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Loads the cache into object's properties</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_buildCache" id="__buildCache">
+
+		<td class="attributes"><code>
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__buildCache">#</a>
+		<code><a href="source-class-HZErrorPage.Browscap.html#535-556" title="Go to source code">_buildCache</a>( )</code>
+
+		<div class="description short">
+			
+<p>Parses the array to cache and creates the PHP string to write to disk</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Parses the array to cache and creates the PHP string to write to disk</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>the PHP string to save into the cache file<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_getStreamContext" id="__getStreamContext">
+
+		<td class="attributes"><code>
+			 protected 
+			resource
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__getStreamContext">#</a>
+		<code><a href="source-class-HZErrorPage.Browscap.html#558-570" title="Go to source code">_getStreamContext</a>( <span>mixed <var>$recreate</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Lazy getter for the stream context resource.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Lazy getter for the stream context resource.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>resource</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_getRemoteIniFile" id="__getRemoteIniFile">
+
+		<td class="attributes"><code>
+			 protected 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__getRemoteIniFile">#</a>
+		<code><a href="source-class-HZErrorPage.Browscap.html#572-628" title="Go to source code">_getRemoteIniFile</a>( <span>string <var>$url</var></span>, <span>string <var>$path</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Updates the local copy of the ini file (by version checking) and adapts his
+syntax to the PHP ini parser</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Updates the local copy of the ini file (by version checking) and adapts his
+syntax to the PHP ini parser</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$url</var></dt>
+					<dd><code>string</code><br>$url the url of the remote server</dd>
+					<dt><var>$path</var></dt>
+					<dd><code>string</code><br>$path the path of the ini file to update</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>if the ini file was updated<br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-HZErrorPage.Exception.html">HZErrorPage\Exception</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_getRemoteMTime" id="__getRemoteMTime">
+
+		<td class="attributes"><code>
+			 protected 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__getRemoteMTime">#</a>
+		<code><a href="source-class-HZErrorPage.Browscap.html#630-646" title="Go to source code">_getRemoteMTime</a>( )</code>
+
+		<div class="description short">
+			
+<p>Gets the remote ini file update timestamp</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets the remote ini file update timestamp</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>the remote modification timestamp<br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-HZErrorPage.Exception.html">HZErrorPage\Exception</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_getLocalMTime" id="__getLocalMTime">
+
+		<td class="attributes"><code>
+			 protected 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__getLocalMTime">#</a>
+		<code><a href="source-class-HZErrorPage.Browscap.html#648-661" title="Go to source code">_getLocalMTime</a>( )</code>
+
+		<div class="description short">
+			
+<p>Gets the local ini file update timestamp</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets the local ini file update timestamp</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>the local modification timestamp<br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-HZErrorPage.Exception.html">HZErrorPage\Exception</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_array2string" id="__array2string">
+
+		<td class="attributes"><code>
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__array2string">#</a>
+		<code><a href="source-class-HZErrorPage.Browscap.html#663-697" title="Go to source code">_array2string</a>( <span>array <var>$array</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Converts the given array to the PHP string which represent it. This method
+optimizes the PHP code and the output differs form the var_export one as the
+internal PHP function does not strip whitespace or convert strings to
+numbers.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Converts the given array to the PHP string which represent it. This method
+optimizes the PHP code and the output differs form the var_export one as the
+internal PHP function does not strip whitespace or convert strings to
+numbers.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$array</var></dt>
+					<dd><code>array</code><br>$array the array to parse and convert</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>the array parsed into a PHP string<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_getUpdateMethod" id="__getUpdateMethod">
+
+		<td class="attributes"><code>
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__getUpdateMethod">#</a>
+		<code><a href="source-class-HZErrorPage.Browscap.html#699-723" title="Go to source code">_getUpdateMethod</a>( )</code>
+
+		<div class="description short">
+			
+<p>Checks for the various possibilities offered by the current configuration of
+PHP to retrieve external HTTP data</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Checks for the various possibilities offered by the current configuration of
+PHP to retrieve external HTTP data</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>the name of function to use to retrieve the file<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_getRemoteData" id="__getRemoteData">
+
+		<td class="attributes"><code>
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__getRemoteData">#</a>
+		<code><a href="source-class-HZErrorPage.Browscap.html#725-808" title="Go to source code">_getRemoteData</a>( <span>string <var>$url</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Retrieve the data identified by the URL</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Retrieve the data identified by the URL</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$url</var></dt>
+					<dd><code>string</code><br>$url the url of the data</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>the retrieved data<br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-HZErrorPage.Exception.html">HZErrorPage\Exception</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_getUserAgent" id="__getUserAgent">
+
+		<td class="attributes"><code>
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__getUserAgent">#</a>
+		<code><a href="source-class-HZErrorPage.Browscap.html#810-822" title="Go to source code">_getUserAgent</a>( )</code>
+
+		<div class="description short">
+			
+<p>Format the useragent string to be used in the remote requests made by the
+class during the update process.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Format the useragent string to be used in the remote requests made by the
+class during the update process.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>the formatted user agent<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="VERSION" id="VERSION">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-HZErrorPage.Browscap.html#42-45" title="Go to source code"><b>VERSION</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'1.0'</span></code></td>
+		<td class="description"><div>
+			<a href="#VERSION" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Current version of the class.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Current version of the class.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="UPDATE_FOPEN" id="UPDATE_FOPEN">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-HZErrorPage.Browscap.html#47-55" title="Go to source code"><b>UPDATE_FOPEN</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'URL-wrapper'</span></code></td>
+		<td class="description"><div>
+			<a href="#UPDATE_FOPEN" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Different ways to access remote and local files.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Different ways to access remote and local files.</p>
+
+<p>UPDATE_FOPEN: Uses the fopen url wrapper (use file_get_contents).
+UPDATE_FSOCKOPEN: Uses the socket functions (fsockopen). UPDATE_CURL: Uses the
+cURL extension. UPDATE_LOCAL: Updates from a local file (file_get_contents).</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="UPDATE_FSOCKOPEN" id="UPDATE_FSOCKOPEN">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-HZErrorPage.Browscap.html#56" title="Go to source code"><b>UPDATE_FSOCKOPEN</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'socket'</span></code></td>
+		<td class="description"><div>
+			<a href="#UPDATE_FSOCKOPEN" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="UPDATE_CURL" id="UPDATE_CURL">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-HZErrorPage.Browscap.html#57" title="Go to source code"><b>UPDATE_CURL</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'cURL'</span></code></td>
+		<td class="description"><div>
+			<a href="#UPDATE_CURL" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="UPDATE_LOCAL" id="UPDATE_LOCAL">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-HZErrorPage.Browscap.html#58" title="Go to source code"><b>UPDATE_LOCAL</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'local'</span></code></td>
+		<td class="description"><div>
+			<a href="#UPDATE_LOCAL" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="REGEX_DELIMITER" id="REGEX_DELIMITER">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-HZErrorPage.Browscap.html#60-66" title="Go to source code"><b>REGEX_DELIMITER</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'@'</span></code></td>
+		<td class="description"><div>
+			<a href="#REGEX_DELIMITER" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Options for regex patterns.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Options for regex patterns.</p>
+
+<p>REGEX_DELIMITER: Delimiter of all the regex patterns in the whole class.
+REGEX_MODIFIERS: Regex modifiers.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="REGEX_MODIFIERS" id="REGEX_MODIFIERS">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-HZErrorPage.Browscap.html#67" title="Go to source code"><b>REGEX_MODIFIERS</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'i'</span></code></td>
+		<td class="description"><div>
+			<a href="#REGEX_MODIFIERS" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="VALUES_TO_QUOTE" id="VALUES_TO_QUOTE">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-HZErrorPage.Browscap.html#69-72" title="Go to source code"><b>VALUES_TO_QUOTE</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'Browser|Parent'</span></code></td>
+		<td class="description"><div>
+			<a href="#VALUES_TO_QUOTE" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The values to quote in the ini file</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The values to quote in the ini file</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="ORDER_FUNC_ARGS" id="ORDER_FUNC_ARGS">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-HZErrorPage.Browscap.html#74-81" title="Go to source code"><b>ORDER_FUNC_ARGS</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'$a, $b'</span></code></td>
+		<td class="description"><div>
+			<a href="#ORDER_FUNC_ARGS" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Definitions of the function used by the uasort() function to order the
+userAgents array.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Definitions of the function used by the uasort() function to order the
+userAgents array.</p>
+
+<p>ORDER_FUNC_ARGS: Arguments that the function will take. ORDER_FUNC_LOGIC:
+Internal logic of the function.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="ORDER_FUNC_LOGIC" id="ORDER_FUNC_LOGIC">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-HZErrorPage.Browscap.html#82" title="Go to source code"><b>ORDER_FUNC_LOGIC</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'$a=strlen($a);$b=strlen($b);return$a==$b?0:($a&lt;$b?1:-1);'</span></code></td>
+		<td class="description"><div>
+			<a href="#ORDER_FUNC_LOGIC" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="REQUEST_HEADERS" id="REQUEST_HEADERS">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-HZErrorPage.Browscap.html#84-87" title="Go to source code"><b>REQUEST_HEADERS</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">&quot;GET %s HTTP/1.0\r\nHost: %s\r\nUser-Agent: %s\r\nConnection: Close\r\n\r\n&quot;</span></code></td>
+		<td class="description"><div>
+			<a href="#REQUEST_HEADERS" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The headers to be sent for checking the version and requesting the file.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The headers to be sent for checking the version and requesting the file.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="remoteIniUrl" id="$remoteIniUrl">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-HZErrorPage.Browscap.html#89-103" title="Go to source code"><var>$remoteIniUrl</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">'http://browsers.garykeith.com/stream.asp?BrowsCapINI'</span></code></td>
+		<td class="description"><div>
+			<a href="#$remoteIniUrl" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Options for auto update capabilities</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Options for auto update capabilities</p>
+
+<p>$remoteVerUrl: The location to use to check out if a new version of the
+browscap.ini file is available. $remoteIniUrl: The location from which download
+the ini file. The placeholder for the file should be represented by a %s.
+$timeout: The timeout for the requests. $updateInterval: The update interval in
+seconds. $errorInterval: The next update interval in seconds in case of an
+error. $doAutoUpdate: Flag to disable the automatic interval based update.
+$updateMethod: The method to use to update the file, has to be a value of an
+UPDATE_* constant, null or false.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="remoteVerUrl" id="$remoteVerUrl">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-HZErrorPage.Browscap.html#104" title="Go to source code"><var>$remoteVerUrl</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">'http://browsers.garykeith.com/versions/version-date.asp'</span></code></td>
+		<td class="description"><div>
+			<a href="#$remoteVerUrl" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="timeout" id="$timeout">
+		<td class="attributes"><code>
+			public  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-HZErrorPage.Browscap.html#105" title="Go to source code"><var>$timeout</var></a>
+		</td>
+		<td class="value"><code><span class="php-num">5</span></code></td>
+		<td class="description"><div>
+			<a href="#$timeout" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="updateInterval" id="$updateInterval">
+		<td class="attributes"><code>
+			public  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-HZErrorPage.Browscap.html#106" title="Go to source code"><var>$updateInterval</var></a>
+		</td>
+		<td class="value"><code><span class="php-num">432000</span></code></td>
+		<td class="description"><div>
+			<a href="#$updateInterval" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="errorInterval" id="$errorInterval">
+		<td class="attributes"><code>
+			public  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-HZErrorPage.Browscap.html#107" title="Go to source code"><var>$errorInterval</var></a>
+		</td>
+		<td class="value"><code><span class="php-num">7200</span></code></td>
+		<td class="description"><div>
+			<a href="#$errorInterval" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="doAutoUpdate" id="$doAutoUpdate">
+		<td class="attributes"><code>
+			public  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-HZErrorPage.Browscap.html#108" title="Go to source code"><var>$doAutoUpdate</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">true</span></code></td>
+		<td class="description"><div>
+			<a href="#$doAutoUpdate" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="updateMethod" id="$updateMethod">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-HZErrorPage.Browscap.html#109" title="Go to source code"><var>$updateMethod</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">null</span></code></td>
+		<td class="description"><div>
+			<a href="#$updateMethod" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="localFile" id="$localFile">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-HZErrorPage.Browscap.html#111-117" title="Go to source code"><var>$localFile</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">null</span></code></td>
+		<td class="description"><div>
+			<a href="#$localFile" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The path of the local version of the browscap.ini file from which to update
+(to be set only if used).</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The path of the local version of the browscap.ini file from which to update
+(to be set only if used).</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="userAgent" id="$userAgent">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-HZErrorPage.Browscap.html#119-125" title="Go to source code"><var>$userAgent</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">'Browser Capabilities Project - PHP Browscap/%v %m'</span></code></td>
+		<td class="description"><div>
+			<a href="#$userAgent" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The useragent to include in the requests made by the class during the update
+process.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The useragent to include in the requests made by the class during the update
+process.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="lowercase" id="$lowercase">
+		<td class="attributes"><code>
+			public  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-HZErrorPage.Browscap.html#127-133" title="Go to source code"><var>$lowercase</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">false</span></code></td>
+		<td class="description"><div>
+			<a href="#$lowercase" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Flag to enable only lowercase indexes in the result. The cache has to be
+rebuilt in order to apply this option.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Flag to enable only lowercase indexes in the result. The cache has to be
+rebuilt in order to apply this option.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="silent" id="$silent">
+		<td class="attributes"><code>
+			public  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-HZErrorPage.Browscap.html#135-143" title="Go to source code"><var>$silent</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">false</span></code></td>
+		<td class="description"><div>
+			<a href="#$silent" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Flag to enable/disable silent error management. In case of an error during
+the update process the class returns an empty array/object if the update process
+can't take place and the browscap.ini file does not exist.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Flag to enable/disable silent error management. In case of an error during
+the update process the class returns an empty array/object if the update process
+can't take place and the browscap.ini file does not exist.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="cacheFilename" id="$cacheFilename">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-HZErrorPage.Browscap.html#145-150" title="Go to source code"><var>$cacheFilename</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">'cache.php'</span></code></td>
+		<td class="description"><div>
+			<a href="#$cacheFilename" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Where to store the cached PHP arrays.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Where to store the cached PHP arrays.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="iniFilename" id="$iniFilename">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-HZErrorPage.Browscap.html#152-157" title="Go to source code"><var>$iniFilename</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">'browscap.ini'</span></code></td>
+		<td class="description"><div>
+			<a href="#$iniFilename" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Where to store the downloaded ini file.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Where to store the downloaded ini file.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="cacheDir" id="$cacheDir">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-HZErrorPage.Browscap.html#159-164" title="Go to source code"><var>$cacheDir</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">null</span></code></td>
+		<td class="description"><div>
+			<a href="#$cacheDir" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Path to the cache directory</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Path to the cache directory</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="_cacheLoaded" id="$_cacheLoaded">
+		<td class="attributes"><code>
+			protected  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-HZErrorPage.Browscap.html#166-171" title="Go to source code"><var>$_cacheLoaded</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">false</span></code></td>
+		<td class="description"><div>
+			<a href="#$_cacheLoaded" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Flag to be set to true after loading the cache</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Flag to be set to true after loading the cache</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="_userAgents" id="$_userAgents">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-HZErrorPage.Browscap.html#173-178" title="Go to source code"><var>$_userAgents</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$_userAgents" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Where to store the value of the included PHP cache file</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Where to store the value of the included PHP cache file</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="_browsers" id="$_browsers">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-HZErrorPage.Browscap.html#179" title="Go to source code"><var>$_browsers</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$_browsers" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="_patterns" id="$_patterns">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-HZErrorPage.Browscap.html#180" title="Go to source code"><var>$_patterns</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$_patterns" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="_properties" id="$_properties">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-HZErrorPage.Browscap.html#181" title="Go to source code"><var>$_properties</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$_properties" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="_streamContextOptions" id="$_streamContextOptions">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-HZErrorPage.Browscap.html#183-194" title="Go to source code"><var>$_streamContextOptions</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$_streamContextOptions" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>An associative array of associative arrays in the format
+<code>$arr['wrapper']['option'] = $value</code> passed to
+stream_context_create() when building a stream resource.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>An associative array of associative arrays in the format
+<code>$arr['wrapper']['option'] = $value</code> passed to
+stream_context_create() when building a stream resource.</p>
+
+<p>Proxy settings are stored in this variable.</p>
+
+
+					<h4>See</h4>
+					<div class="list">
+							<a
+href="http://www.php.net/manual/en/function.stream-context-create.php">http://www.php.net/manual/en/function.stream-context-create.php</a><br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="_streamContext" id="$_streamContext">
+		<td class="attributes"><code>
+			protected  
+			resource
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-HZErrorPage.Browscap.html#196-203" title="Go to source code"><var>$_streamContext</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">null</span></code></td>
+		<td class="description"><div>
+			<a href="#$_streamContext" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>A valid context resource created with stream_context_create().</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>A valid context resource created with stream_context_create().</p>
+
+
+					<h4>See</h4>
+					<div class="list">
+							<a
+href="http://www.php.net/manual/en/function.stream-context-create.php">http://www.php.net/manual/en/function.stream-context-create.php</a><br />
+					</div>
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		hzerrorpages API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
