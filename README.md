@@ -1,4 +1,4 @@
-hzerrorpages
+HZErrorPages
 ============
 
 Personalizzed Web Server error pages
