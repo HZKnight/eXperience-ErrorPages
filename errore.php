@@ -1,5 +1,9 @@
 <?php
-    namespace HZErrorPage;
+    
+    namespace HZSystem;
+    
+    use phpbrowscap\Browscap;
+    
 
     /* 
      * -------------------------------------------------------------------------
@@ -29,11 +33,20 @@
      * along with this program.  If not, see <http://www.gnu.org/licenses/>.
      */
     
+    require_once 'lib/logger/hzlogger.class.php';
     require_once 'config.inc.php';
     require_once 'lib/function.inc.php';
     require_once 'lib/Browscap.php';
 
+    $log[] = Core\HZLogger::getLogger('arturo');
+    $log[] = Core\HZLogger::getLogger("debora");
+    
+    echo "<pre>";
+    var_dump(Core\HZLogger::$_instace);
+    echo "</pre>";
+    
     $bc = new Browscap('tmp');
+    $bc->doAutoUpdate = false;
     
     $result = $_GET['err'];
 

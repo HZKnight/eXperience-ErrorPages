@@ -1,11 +1,22 @@
-[Tue 26 Mar 13:59:47 CET 2013] [client: 127.0.0.1 (Chromium 25.0 - Linux)] (http://localhost/404) Errore 404
-[Tue 26 Mar 14:00:48 CET 2013] [client: 127.0.0.1 (Chromium 25.0 - Linux)] (http://localhost/favicon.ico) Errore 404
-[Tue 26 Mar 15:14:15 CET 2013] [client: 127.0.0.1 (Chromium 25.0 - Linux)] (http://localhost/404) Errore 404
-[Tue 26 Mar 15:15:22 CET 2013] [client: 127.0.0.1 (Chromium 25.0 - Linux)] (http://localhost/favicon.ico) Errore 404
-[Thu 5 Dec 15:00:20 CET 2013] [client:  ( - unknown)] (http://localhost) Errore 
-[Thu 5 Dec 15:00:41 CET 2013] [client:  ( - unknown)] (http://localhost) Errore 
-[Wed 4 Jun 12:23:55 CEST 2014] [client:  ( - unknown)] (http://localhost) Errore 
-[Wed 4 Jun 12:23:57 CEST 2014] [client:  ( - unknown)] (http://localhost) Errore 
-[Wed 4 Jun 14:59:31 CEST 2014] [client:  ( - unknown)] (http://localhost) Errore 3
-[Wed 4 Jun 14:59:44 CEST 2014] [client:  ( - unknown)] (http://localhost) Errore 404
-[Wed 4 Jun 15:00:31 CEST 2014] [client:  ( - unknown)] (http://localhost) Errore 404
+[Wed 15 Apr 6:57:55 UTC 2015] [client:  (Firefox 37.0 - Linux)] (http://localhost) Errore 
+[Wed 15 Apr 7:00:48 UTC 2015] [client:  (Firefox 37.0 - Linux)] (http://localhost) Errore 404
+[Wed 15 Apr 7:02:47 UTC 2015] [client:  (Firefox 37.0 - Linux)] (http://localhost404) Errore 404
+[Wed 15 Apr 7:02:53 UTC 2015] [client:  (Firefox 37.0 - Linux)] (http://localhost/404) Errore 404
+[Fri 24 Apr 9:48:29 UTC 2015] [client:  (Firefox 37.0 - Linux)] (http://localhost) Errore 
+[Wed 6 May 7:32:15 UTC 2015] [client:  (Firefox 37.0 - Linux)] (http://localhost) Errore 
+[Wed 6 May 10:28:15 UTC 2015] [client:  (Firefox 37.0 - Linux)] (http://localhost) Errore 
+[Wed 6 May 10:38:26 UTC 2015] [client:  (Firefox 37.0 - Linux)] (http://localhost) Errore 
+[Wed 6 May 10:38:45 UTC 2015] [client:  (Firefox 37.0 - Linux)] (http://localhost) Errore 
+[Wed 13 May 8:49:32 UTC 2015] [client:  (Firefox 37.0 - Linux)] (http://localhost) Errore 
+[Wed 13 May 8:49:48 UTC 2015] [client:  (Firefox 37.0 - Linux)] (http://localhost) Errore 
+[Wed 13 May 8:49:51 UTC 2015] [client:  (Firefox 37.0 - Linux)] (http://localhost) Errore 
+[Wed 13 May 8:49:53 UTC 2015] [client:  (Firefox 37.0 - Linux)] (http://localhost) Errore 
+[Mon 18 May 14:05:41 UTC 2015] [client:  (Firefox 37.0 - Linux)] (http://localhost) Errore 
+[Mon 18 May 14:11:55 UTC 2015] [client:  (Firefox 37.0 - Linux)] (http://localhost) Errore 
+[Tue 19 May 6:37:37 UTC 2015] [client:  (Firefox 37.0 - Linux)] (http://localhost) Errore 
+[Tue 19 May 6:38:24 UTC 2015] [client:  (Firefox 37.0 - Linux)] (http://localhost) Errore 
+[Tue 19 May 7:47:48 UTC 2015] [client:  (Firefox 37.0 - Linux)] (http://localhost) Errore 
+[Tue 19 May 7:47:52 UTC 2015] [client:  (Firefox 37.0 - Linux)] (http://localhost) Errore 
+[Tue 19 May 7:47:55 UTC 2015] [client:  (Firefox 37.0 - Linux)] (http://localhost) Errore 
+[Tue 2 Jun 8:56:33 UTC 2015] [client:  (Firefox Generic - Linux)] (http://localhost) Errore 
+[Sun 19 Jul 15:07:45 CEST 2015] [client:  (Chrome 43.0 - Win10)] (http://localhost) Errore 
