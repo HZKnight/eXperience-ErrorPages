@@ -20,3 +20,6 @@
 [Tue 19 May 7:47:55 UTC 2015] [client:  (Firefox 37.0 - Linux)] (http://localhost) Errore 
 [Tue 2 Jun 8:56:33 UTC 2015] [client:  (Firefox Generic - Linux)] (http://localhost) Errore 
 [Sun 19 Jul 15:07:45 CEST 2015] [client:  (Chrome 43.0 - Win10)] (http://localhost) Errore 
+[Thu 4 Jan 14:26:34 CET 2018] [client:  (DefaultProperties - unknown)] (http://localhost) Errore 
+[Thu 4 Jan 14:31:37 CET 2018] [client:  (Opera 49.0 - Win10)] (http://localhost) Errore 
+[Thu 4 Jan 14:43:51 CET 2018] [client:  (Opera 49.0 - Win10)] (http://localhost) Errore 
