@@ -1,1 +1,1 @@
-<?php header ("Location:http://localhost/luca/errore/errore.php?err=404&".$_SERVER['QUERY_STRING']) ?>
+<?php header ("Location:./errore.php?err=404&".$_SERVER['QUERY_STRING']) ?>

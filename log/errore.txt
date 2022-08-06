@@ -23,3 +23,12 @@
 [Thu 4 Jan 14:26:34 CET 2018] [client:  (DefaultProperties - unknown)] (http://localhost) Errore 
 [Thu 4 Jan 14:31:37 CET 2018] [client:  (Opera 49.0 - Win10)] (http://localhost) Errore 
 [Thu 4 Jan 14:43:51 CET 2018] [client:  (Opera 49.0 - Win10)] (http://localhost) Errore 
+[Sat 6 Aug 8:49:36 CEST 2022] [client:  (Chrome 104.0 - ChromeOS)] (http://100.115.92.203) Errore 404
+[Sat 6 Aug 8:55:42 CEST 2022] [client:  (Chrome 104.0 - ChromeOS)] (http://100.115.92.203) Errore 404
+[Sat 6 Aug 8:59:38 CEST 2022] [client:  (Chrome 104.0 - ChromeOS)] (http://100.115.92.203) Errore 404
+[Sat 6 Aug 9:02:03 CEST 2022] [client:  (Chrome 104.0 - ChromeOS)] (http://100.115.92.203) Errore 404
+[Sat 6 Aug 9:02:15 CEST 2022] [client:  (Chrome 104.0 - ChromeOS)] (http://100.115.92.203) Errore 404
+[Sat 6 Aug 9:12:51 CEST 2022] [client:  (Chrome 104.0 - ChromeOS)] (http://100.115.92.203) Errore 404
+[Sat 6 Aug 9:13:48 CEST 2022] [client:  (Chrome 104.0 - ChromeOS)] (http://100.115.92.203) Errore 404
+[Sat 6 Aug 9:19:41 CEST 2022] [client:  (Chrome 104.0 - ChromeOS)] (http://100.115.92.203) Errore 404
+[Sat 6 Aug 9:25:55 CEST 2022] [client:  (Chrome 104.0 - ChromeOS)] (http://100.115.92.203) Errore 404

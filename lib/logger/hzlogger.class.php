@@ -23,11 +23,15 @@
             
     public static function getLogger($logfile){
         
+      if (array_key_exists($logfile, self::$_instace)) {
         if (!(self::$_instace[$logfile] instanceof self)){
             self::$_instace[$logfile] = new self($logfile);
         }
+      } else {
+        self::$_instace[$logfile] = new self($logfile);
+      }
         
-        return self::$_instace[$logfile];
+      return self::$_instace[$logfile];
     }
     
     public function __construct($logfile){
