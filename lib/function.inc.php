@@ -33,9 +33,14 @@
 
         $date=date("D j M G:i:s T Y");
         $agent=$bc->getBrowser();
+
+        $url = "";
+        if (array_key_exists('url', $_GET)) {
+            $url = $_GET['url'];
+        }
         
         if ($action == "L") { 
-            $message = "[$date] [client: $REMOTE_ADDR ({$agent->Parent} - {$agent->Platform})] (http://".$_SERVER['HTTP_HOST'].$_GET['url'].") Errore ".$_GET['err']."\n";
+            $message = "[$date] [client: $REMOTE_ADDR ({$agent->Parent} - {$agent->Platform})] (http://".$_SERVER['HTTP_HOST'].$url.") Errore ".$_GET['err']."\n";
             
             $fp = fopen($logerrori,"a+");
             fwrite($fp, $message);
@@ -57,7 +62,7 @@
 
                     Browser:\t$HTTP_USER_AGENT
 
-                    Pagina di provenienza:\t http://".$_SERVER['HTTP_HOST'].$_GET['url']."
+                    Pagina di provenienza:\t http://".$_SERVER['HTTP_HOST'].$url."
 
                     ------------------------------------------------------------------------------";
 

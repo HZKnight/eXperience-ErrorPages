@@ -153,7 +153,7 @@
                         </tr>
                     </table>
                     <div class="small">
-                        <strong>&copy;<?=date('Y')?> <?=$nomesito ?></strong> - Powered by HZErrorPage Ver.0.1.0
+                        <strong>&copy;<?=date('Y')?> <?=$nomesito ?></strong> - Powered by Experience ErrorPages Ver.0.1.0
                     </div>
                     
                 </td>

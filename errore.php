@@ -40,7 +40,7 @@
 
     $log[] = Core\HZLogger::getLogger('arturo');
     $log[] = Core\HZLogger::getLogger("debora");
-    
+
     echo "<pre>";
     var_dump(Core\HZLogger::$_instace);
     echo "</pre>";

@@ -76,15 +76,20 @@
     #
     ###################################################################
 
+    $url = "";
+    if (array_key_exists('url', $_GET)) {
+        $url = $_GET['url'];
+    }
+
     #Pagina che appare con errore 400
     $msg['400'] = "
-    L'indrizzo richiesto (http://".$_SERVER['HTTP_HOST'].$_GET['url'].")
+    L'indrizzo richiesto (http://".$_SERVER['HTTP_HOST'].$url.")
     non &egrave; un indirizzo valido.";
 
 
     #Pagina che appare con errore 401
     $msg['401'] = "
-    Accesso alla pagina richiesta (http://".$_SERVER['HTTP_HOST'].$_GET['url'].") negato.
+    Accesso alla pagina richiesta (http://".$_SERVER['HTTP_HOST'].$url.") negato.
     <br/> Per accedere a questa pagina &egrave; necessario disporre delle autorizzazioni necessarie e aver effettuato il logn al sito.
     <br /><br />
     Abbiamo rilevato e registrato l'errore, cercheremo di risolverlo quanto prima se &egrave; causato da un problema del sistema.";
@@ -92,12 +97,12 @@
 
     #Pagina che appare con errore 403
     $msg['403'] = " 
-    L'accesso all'indirizzo richiesto (http://".$_SERVER['HTTP_HOST'].$_GET['url'].") non &egrave; consentito.";
+    L'accesso all'indirizzo richiesto (http://".$_SERVER['HTTP_HOST'].$url.") non &egrave; consentito.";
 
 
     #Pagina che appare con errore 404
     $msg['404'] = "
-    L'indirizzo richiesto (http://".$_SERVER['HTTP_HOST'].$_GET['url'].") non &egrave; disponibile sul server.  
+    L'indirizzo richiesto (http://".$_SERVER['HTTP_HOST'].$url.") non &egrave; disponibile sul server.  
     Se non &egrave; stato commesso un errore di digitazione, probabilmente avete memorizzato in una precedente visita al nostro sito un link non pi&ugrave; esistente. 
     <br/><br/>
     Abbiamo rilevato questo errore e risolveremo quanto prima il problema in caso si tratti di pagina non raggiungibile.";
@@ -105,7 +110,7 @@
 
     #Pagina che appare con errore 500
     $msg['500'] = " 
-    Ci di spiace ma non siamo in grado di soddisfare la sua richiesta (http://".$_SERVER['HTTP_HOST'].$_GET['url'].") 
+    Ci di spiace ma non siamo in grado di soddisfare la sua richiesta (http://".$_SERVER['HTTP_HOST'].$url.") 
     perch&egrave; si  &egrave; verificato un errore imprevisto sul server.
     <br /><br />
     Abbiamo rilevato e registrato l'errore in modo da poter risolvere il problema quanto prima.";
@@ -113,7 +118,7 @@
     
     #Pagina che appare con errore sconosciuto
     $msg['000'] = "
-    L'indirizzo richiesto (http://".$_SERVER['HTTP_HOST'].$_GET['url'].")  
+    L'indirizzo richiesto (http://".$_SERVER['HTTP_HOST'].$url.")  
     restituisce un errore sconosciuto.
     <br /><br />
     Abbiamo rilevato e registrato l'errore, cercheremo di risolverlo quanto prima.";
