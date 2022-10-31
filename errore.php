@@ -48,7 +48,7 @@
     $bc = new Browscap('tmp');
     $bc->doAutoUpdate = false;
     
-    $result = $_GET['err'];
+    $result = (array_key_exists('err', $_GET)) ? $_GET['err'] : "000";
 
     if ($result != "400" && $result != "401" && $result != "403" && $result != "404" && $result != "500"){ 
         $result="000";

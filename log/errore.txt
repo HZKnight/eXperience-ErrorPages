@@ -32,3 +32,8 @@
 [Sat 6 Aug 9:13:48 CEST 2022] [client:  (Chrome 104.0 - ChromeOS)] (http://100.115.92.203) Errore 404
 [Sat 6 Aug 9:19:41 CEST 2022] [client:  (Chrome 104.0 - ChromeOS)] (http://100.115.92.203) Errore 404
 [Sat 6 Aug 9:25:55 CEST 2022] [client:  (Chrome 104.0 - ChromeOS)] (http://100.115.92.203) Errore 404
+[Fri 28 Oct 8:53:23 CEST 2022] [client:  (Chrome 106.0 - Win10)] (http://localhost:3000) Errore 
+[Fri 28 Oct 9:00:01 CEST 2022] [client:  (Chrome 106.0 - Win10)] (http://localhost:3000) Errore 
+[Fri 28 Oct 9:01:56 CEST 2022] [client:  (Chrome 106.0 - Win10)] (http://localhost:3000) Errore 000
+[Fri 28 Oct 9:29:02 CEST 2022] [client:  (Chrome 106.0 - Win10)] (http://localhost:3000) Errore 000
+[Fri 28 Oct 18:41:33 CEST 2022] [client:  (Chrome 106.0 - Win10)] (http://localhost:3000) Errore 404

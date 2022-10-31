@@ -38,9 +38,11 @@
         if (array_key_exists('url', $_GET)) {
             $url = $_GET['url'];
         }
+
+        $err = (array_key_exists('err', $_GET)) ? $_GET['err'] : "000";
         
         if ($action == "L") { 
-            $message = "[$date] [client: $REMOTE_ADDR ({$agent->Parent} - {$agent->Platform})] (http://".$_SERVER['HTTP_HOST'].$url.") Errore ".$_GET['err']."\n";
+            $message = "[$date] [client: $REMOTE_ADDR ({$agent->Parent} - {$agent->Platform})] (http://".$_SERVER['HTTP_HOST'].$url.") Errore ".$err."\n";
             
             $fp = fopen($logerrori,"a+");
             fwrite($fp, $message);
