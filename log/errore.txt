@@ -37,3 +37,9 @@
 [Fri 28 Oct 9:01:56 CEST 2022] [client:  (Chrome 106.0 - Win10)] (http://localhost:3000) Errore 000
 [Fri 28 Oct 9:29:02 CEST 2022] [client:  (Chrome 106.0 - Win10)] (http://localhost:3000) Errore 000
 [Fri 28 Oct 18:41:33 CEST 2022] [client:  (Chrome 106.0 - Win10)] (http://localhost:3000) Errore 404
+[Mon 31 Oct 14:18:12 CET 2022] [client:  (Chrome 106.0 - Win10)] (http://localhost:3000) Errore 403
+[Mon 31 Oct 14:21:09 CET 2022] [client:  (Chrome 106.0 - Win10)] (http://localhost:3000) Errore 403
+[Mon 31 Oct 14:22:30 CET 2022] [client:  (Chrome 106.0 - Win10)] (http://localhost:3000) Errore 403
+[Mon 31 Oct 16:18:41 CET 2022] [client:  (Chrome 106.0 - Win10)] (http://localhost:3000) Errore 400
+[Mon 31 Oct 16:40:00 CET 2022] [client: ::1 (Chrome 106.0 - Win10)] (http://localhost:3000) Errore 400
+[Mon 31 Oct 16:41:40 CET 2022] [client: ::1 (Chrome 106.0 - Win10)] (http://localhost:3000) Errore 400

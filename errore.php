@@ -41,9 +41,9 @@
     $log[] = Core\HZLogger::getLogger('arturo');
     $log[] = Core\HZLogger::getLogger("debora");
 
-    echo "<pre>";
+    /* echo "<pre>";
     var_dump(Core\HZLogger::$_instace);
-    echo "</pre>";
+    echo "</pre>"; */
     
     $bc = new Browscap('tmp');
     $bc->doAutoUpdate = false;

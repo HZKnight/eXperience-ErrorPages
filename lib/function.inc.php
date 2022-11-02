@@ -42,7 +42,7 @@
         $err = (array_key_exists('err', $_GET)) ? $_GET['err'] : "000";
         
         if ($action == "L") { 
-            $message = "[$date] [client: $REMOTE_ADDR ({$agent->Parent} - {$agent->Platform})] (http://".$_SERVER['HTTP_HOST'].$url.") Errore ".$err."\n";
+            $message = "[$date] [client: {$_SERVER['REMOTE_ADDR']} ({$agent->Parent} - {$agent->Platform})] (http://".$_SERVER['HTTP_HOST'].$url.") Errore ".$err."\n";
             
             $fp = fopen($logerrori,"a+");
             fwrite($fp, $message);
@@ -52,17 +52,17 @@
 
                     ------------------------------------------------------------------------------
 
-                    Sito:\t\t$nomesito ($SERVER_NAME)
+                    Sito:\t\t$nomesito ({$_SERVER['SERVER_NAME']})
 
                     Codice Errore:\t$result $subject[$result] 
 
                     Accaduto il:\t$date
 
-                    Url in errore:\t$REQUEST_URI
+                    Url in errore:\t{$_SERVER['REQUEST_URI']}
 
-                    Indirizzo IP del browser:\t$REMOTE_ADDR
+                    Indirizzo IP del browser:\t{$_SERVER['REMOTE_ADDR']}
 
-                    Browser:\t$HTTP_USER_AGENT
+                    Browser:\t{$_SERVER['HTTP_USER_AGENT']}
 
                     Pagina di provenienza:\t http://".$_SERVER['HTTP_HOST'].$url."
 
