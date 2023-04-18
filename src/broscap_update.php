@@ -39,7 +39,7 @@ ini_set('memory_limit', '-1');
 echo "<h1>Browscap Updater <small>Ver. 1.0</small></h1>";
 echo "<h2>Step 1 - Cleaning cache ....</h2>";
 
-foreach (new DirectoryIterator('tmp') as $fileInfo) {
+foreach (new DirectoryIterator('./temp/cache/') as $fileInfo) {
    if(!$fileInfo->isDot()) {
        echo $fileInfo->getPathname()."...";
        unlink($fileInfo->getPathname());
@@ -48,7 +48,7 @@ foreach (new DirectoryIterator('tmp') as $fileInfo) {
 }
 
 echo "<h2>Step 2 - Updating browscap ....</h2>";
-$browscap = new Browscap('tmp');
+$browscap = new Browscap('./temp/cache/');
 $browscap->updateCache();
 
 echo "END";

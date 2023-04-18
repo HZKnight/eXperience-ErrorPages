@@ -45,7 +45,7 @@
     var_dump(Core\HZLogger::$_instace);
     echo "</pre>"; */
     
-    $bc = new Browscap('tmp');
+    $bc = new Browscap('./temp/cache/');
     $bc->doAutoUpdate = false;
     
     $result = (array_key_exists('err', $_GET)) ? $_GET['err'] : "000";
@@ -54,7 +54,7 @@
         $result="000";
     }
 
-    require_once 'template/error.tpl';
+    require_once 'assets/template/error.tpl';
 
     if ($log[$result] == 'Y') notifica("L",$result);
 

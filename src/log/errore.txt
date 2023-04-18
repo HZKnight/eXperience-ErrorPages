@@ -43,3 +43,12 @@
 [Mon 31 Oct 16:18:41 CET 2022] [client:  (Chrome 106.0 - Win10)] (http://localhost:3000) Errore 400
 [Mon 31 Oct 16:40:00 CET 2022] [client: ::1 (Chrome 106.0 - Win10)] (http://localhost:3000) Errore 400
 [Mon 31 Oct 16:41:40 CET 2022] [client: ::1 (Chrome 106.0 - Win10)] (http://localhost:3000) Errore 400
+[Tue 18 Apr 0:02:57 CEST 2023] [client: ::1 (Chrome Generic - Win10)] (http://localhost:3000) Errore 000
+[Tue 18 Apr 0:02:57 CEST 2023] [client: ::1 (Chrome Generic - Win10)] (http://localhost:3000) Errore 000
+[Tue 18 Apr 0:03:56 CEST 2023] [client: ::1 (Chrome Generic - Win10)] (http://localhost:3000/p) Errore 404
+[Tue 18 Apr 0:03:57 CEST 2023] [client: ::1 (Chrome Generic - Win10)] (http://localhost:3000/p) Errore 404
+[Tue 18 Apr 19:13:45 CEST 2023] [client: ::1 (Chrome 111.0 - Win10)] (http://localhost:3000/p) Errore 404
+[Tue 18 Apr 19:13:46 CEST 2023] [client: ::1 (Chrome 111.0 - Win10)] (http://localhost:3000/p) Errore 404
+[Tue 18 Apr 19:24:12 CEST 2023] [client: ::1 (Chrome 111.0 - Win10)] (http://localhost:3000/p) Errore 404
+[Tue 18 Apr 19:24:13 CEST 2023] [client: ::1 (Chrome 111.0 - Win10)] (http://localhost:3000/p) Errore 404
+[Tue 18 Apr 19:26:03 CEST 2023] [client: ::1 (Chrome 111.0 - Win10)] (http://localhost:3000/p) Errore 404
