@@ -1,7 +1,7 @@
 <?php
- 
+
     /* 
-     * function.inc.php
+     * browscap_update.php
      *                                    
      *                                         __  __                _                     
      *                                      ___\ \/ /_ __   ___ _ __(_) ___ _ __   ___ ___ 
@@ -35,10 +35,10 @@
      */
 
     /**
-     * Personalizzed server error pages function files
-     *
+     * Personalizzed server error pages config file
+     * 
      * @author  lucliscio <lucliscio@h0model.org>
-     * @version v0.1.0  2023/04/24 07:56:20
+     * @version v1.0.0  2013/04/24 07:56:20
      * @copyright Copyright 2023 HZKnight
      * @copyright Copyright 2013 Luca Liscio
      * @license http://www.gnu.org/licenses/agpl-3.0.html GNU/AGPL3
@@ -48,55 +48,25 @@
      * @filesource
      */
 
-    function notifica ($action, $result)
-    {
-        global $bc, $_SERVER, $_GET, $logerrori, $subject, $notifica, $nomesito, $REQUEST_URI, $REMOTE_ADDR, $HTTP_USER_AGENT, $REDIRECT_ERROR_NOTES, $SERVER_NAME,$HTTP_REFERER;
+    use phpbrowscap\Browscap;
+    require_once 'lib/Browscap.php';
 
-        $date=date("D j M G:i:s T Y");
-        $agent=$bc->getBrowser();
+    ini_set('memory_limit', '-1');
 
-        $url = "";
-        if (array_key_exists('url', $_GET)) {
-            $url = $_GET['url'];
-        }
+    echo "<h1>Browscap Updater <small>Ver. 1.0</small></h1>";
+    echo "<h2>Step 1 - Cleaning cache ....</h2>";
 
-        $err = (array_key_exists('err', $_GET)) ? $_GET['err'] : "000";
-        
-        if ($action == "L") { 
-            $message = "[$date] [client: {$_SERVER['REMOTE_ADDR']} ({$agent->Parent} - {$agent->Platform})] (http://".$_SERVER['HTTP_HOST'].$url.") Errore ".$err."\n";
-            
-            $fp = fopen($logerrori,"a+");
-            fwrite($fp, $message);
-            fclose($fp);
-        } else {
-            $message = " 
-
-                    ------------------------------------------------------------------------------
-
-                    Sito:\t\t$nomesito ({$_SERVER['SERVER_NAME']})
-
-                    Codice Errore:\t$result $subject[$result] 
-
-                    Accaduto il:\t$date
-
-                    Url in errore:\t{$_SERVER['REQUEST_URI']}
-
-                    Indirizzo IP del browser:\t{$_SERVER['REMOTE_ADDR']}
-
-                    Browser:\t{$_SERVER['HTTP_USER_AGENT']}
-
-                    Pagina di provenienza:\t http://".$_SERVER['HTTP_HOST'].$url."
-
-                    ------------------------------------------------------------------------------";
-
-            mail("$notifica", "[ Errore del server: $subject[$result] ]", $message,
-
-                "From: auto_message@h0model.org\r\n"
-
-                ."X-Mailer: PHP/" . phpversion());
-
-        }
-
+    foreach (new DirectoryIterator('./temp/cache/') as $fileInfo) {
+    if(!$fileInfo->isDot()) {
+        echo $fileInfo->getPathname()."...";
+        unlink($fileInfo->getPathname());
+        echo "DELETED"."<br>";
+    }
     }
 
+    echo "<h2>Step 2 - Updating browscap ....</h2>";
+    $browscap = new Browscap('./temp/cache/');
+    $browscap->updateCache();
+
+    echo "END";
 ?>
