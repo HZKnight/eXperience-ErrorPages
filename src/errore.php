@@ -57,8 +57,8 @@
     require_once 'lib/function.inc.php';
     require_once 'lib/Browscap.php';
 
-    $log[] = Core\HZLogger::getLogger('arturo');
-    $log[] = Core\HZLogger::getLogger("debora");
+    //$log[] = Core\HZLogger::getLogger('arturo');
+    //$log[] = Core\HZLogger::getLogger("debora");
 
     /* echo "<pre>";
     var_dump(Core\HZLogger::$_instace);
