@@ -1,0 +1,140 @@
+/*Importo i web fonts*/
+@import "fonts.css";
+/*Importo la griglia*/
+@import "hzgrid.css";
+
+/*elementi della pagina*/
+html {
+    font-family: Montserrat,Serif;
+    font-size: 15px;
+    /* background-color: #BFDDFB; */
+    background: #EAFAFF url('../images/sfondo.png') repeat-x;
+    border-top: 3px solid #85B0E4;
+    margin: 0px;
+    text-align: center;
+    padding: 5px;
+}
+
+.splash_box {
+	position: fixed; 
+	width:800px; 
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.splash_box .content {
+	background-color:#fff; 
+	padding:30px;	
+}
+
+.splash_box .box_footer {
+	margin-top:10px;
+	font-size: 12px;
+}
+
+
+/*propriet� visive*/
+.round {
+    border-radius: 15px;
+}
+
+.round_top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.round_bottom{
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;   
+}
+
+.roundb {
+	border-bottom-right-radius: 15px;
+  	border-bottom-left-radius: 15px;
+  	font-size: 10px;
+  	text-align: center;
+  	padding:2px;
+}
+
+.center {
+    /* Internet Explorer 10 */
+    display:-ms-flexbox;
+    -ms-flex-pack:center;
+    -ms-flex-align:center;
+
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+
+    /* Safari, Opera, and Chrome */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+
+    /* W3C */
+    display:box;
+    box-pack:center;
+    box-align:center;
+}
+
+.shadow {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 45px;
+    width: 100%;
+    border-top: 2px solid #dfdfdf;
+    text-align: center;
+    font-size: 12px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "part1 part2";
+    align-items: center;
+    color: #aaa;
+}
+
+.part1 {
+    grid-area: part1;
+    float: left;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.part2 {
+    grid-area: part2;
+    float: left;
+    text-align: right;
+    padding-right: 10px;
+}
+
+/* animations */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+h1 {
+    font-family: Montserrat,Serif;
+}
+
+.logo {
+    width: 500px;
+}
+
+
+
+

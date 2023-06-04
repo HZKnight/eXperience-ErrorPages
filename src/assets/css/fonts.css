@@ -1,0 +1,11 @@
+/*Importo i web fonts*/
+/*font-family: 'Segment7Standard';*/
+@import url(https://fontlibrary.org/face/segment7);
+/*font-family: 'Teleindicadores1Regular';*/
+@import url(https://fontlibrary.org/face/teleindicadores-1);
+/*font-family: 'Ubuntu', sans-serif;*/
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500,700,300,300italic,400italic,500italic,700italic);
+/*font-family: jacky*/
+@import "fonts/jacky.fnt.css";
+/*font-family: 'Montserrat', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat');

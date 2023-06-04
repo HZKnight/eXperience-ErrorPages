@@ -1,0 +1,25 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2-dic-2016, 14.18.38
+    Author     : lliscio
+*/
+
+@font-face {
+	font-family: 'Segment7Standard';
+        src: url('Segment7Standard.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+ /* The following rules are deprecated. */ 
+
+@font-face {
+    font-family: 'Segment7';
+        src: url('Segment7Standard.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}

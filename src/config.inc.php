@@ -55,7 +55,7 @@
     #Nome del sito
     $nomesito="H0Model.Org";
 
-    #Link per tornare alla home od ad una pagina a scelta.
+    #Link per tornare alla home o ad una pagina a scelta.
     $ritornahome="http://www.h0model.org/site/";
 
     #Percorso file di log degli errori, permessi da settare a 777
