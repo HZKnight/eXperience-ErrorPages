@@ -34,10 +34,9 @@
      * -------------------------------------------------------------------------------------------
      */
 
-    namespace Experience\ErrorPages;
     
     use phpbrowscap\Browscap;
-    
+
     /**
      * Personalizzed server error pages
      * 
@@ -52,10 +51,11 @@
      * @filesource
      */
 
-    require_once 'lib/logger/hzlogger.class.php';
+    //require_once 'lib/logger/hzlogger.class.php';
     require_once 'config.inc.php';
     require_once 'lib/function.inc.php';
     require_once 'lib/Browscap.php';
+    require_once "lib/rain.tpl.class.php";
 
     //$log[] = Core\HZLogger::getLogger('arturo');
     //$log[] = Core\HZLogger::getLogger("debora");
@@ -63,6 +63,12 @@
     /* echo "<pre>";
     var_dump(Core\HZLogger::$_instace);
     echo "</pre>"; */
+
+    RainTPL::$tpl_ext = "tpl";
+    RainTPL::$tpl_dir = "assets/templates/";
+    RainTPL::$cache_dir = "temp/templates_c/";
+    RainTPL::$path_replace = false;
+    $view = new RainTPL();
     
     $bc = new Browscap('./temp/cache/');
     $bc->doAutoUpdate = false;
@@ -73,10 +79,20 @@
         $result="000";
     }
 
-    require_once 'assets/template/error.tpl';
+    // Genero la pagina di errore 
+    $view->assign("title", $subject[$result]);
+    $view->assign("error", $result);
+    $view->assign("message", $msg[$result]);
+    $view->assign("return", $ritornahome);
+    $view->assign("copydate", date('Y'));
+    $view->assign("copy", $nomesito);
 
+    // Verifico se è necessario inviare una notifica via mail o nel log
     if ($log[$result] == 'Y') notifica("L",$result);
 
     if ($email[$result] == 'Y') notifica("M",$result);
+
+    // Mostro la pagina di errore
+    $view->draw("error");
 
 ?>
