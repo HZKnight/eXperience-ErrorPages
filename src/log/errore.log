@@ -129,3 +129,6 @@
 [Mon 5 Jun 19:46:48 CEST 2023] [client: ::1 (Chrome Generic - Win10)] (http://localhost:3000) Errore 401
 [Mon 5 Jun 19:46:49 CEST 2023] [client: ::1 (Chrome Generic - Win10)] (http://localhost:3000) Errore 401
 [Mon 5 Jun 19:47:34 CEST 2023] [client: ::1 (Opera Generic - Win10)] (http://localhost:3000) Errore 401
+[Tue 1 Apr 19:26:35 UTC 2025] [client: ::1 (Chrome Generic - Linux)] (http://localhost) Errore 000
+[Tue 1 Apr 19:29:54 UTC 2025] [client: ::1 (Chrome Generic - Linux)] (http://localhost) Errore 000
+[Tue 1 Apr 19:31:07 UTC 2025] [client: ::1 (Chrome Generic - Linux)] (http://localhost) Errore 404
